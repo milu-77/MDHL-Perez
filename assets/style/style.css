@@ -1,0 +1,76 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Comic Sans MS";
+}
+
+/* header */
+
+.cabecera {
+    height: 486px;
+    width: 1000px;
+    position: relative;
+}
+
+.cabecera>h1 {
+    font-size: 45px;
+    font-style: italic;
+
+}
+
+.banner {
+    width: 998px;
+}
+
+.nav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.nav-link {
+    Display: inline;
+    height: 35px;
+    width: 100px;
+    background-color: #4472c4;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #70ad47;
+    color: white;
+}
+
+/* main */
+main {
+    padding-top: 10px;
+    width: 1000px;
+    position: relative;
+    height: 486px;
+
+}
+
+main h2 {
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.logo {
+
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.articulos {
+    width: 750px;
+    position: absolute;
+    left: 230px;
+}
