@@ -60,8 +60,8 @@ header {
 
 .nav-link {
     color: white;
-    font-size: 40px;
-    width: 200px;
+    font-size: 30px;
+    width: 160px;
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ header {
     position: absolute;
     content: "";
     bottom: 0px;
-    background: #ed1c24;
+    background:  crimson;
     width: 94px;
     height: 11px;
     left: 100px;
@@ -235,7 +235,7 @@ header {
     position: absolute;
     content: "";
     bottom: 0px;
-    background: #ed1c24;
+    background: crimson;
     width: 94px;
     height: 11px;
     left: 100px;
@@ -441,27 +441,74 @@ footer li:hover {
     text-align: center;
     font-weight: normal;
 }
-.whatsapp{
+
+.whatsapp {
+
+
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 15px;
+}
+
+.whatsapp:hover {
+    color: #25d366;
+    background-color: #ffffff;
+
+}
+
+.contain-maps {
+    position: relative;
+    height: 1400px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    display: flex;
+    padding: 75px;
+    margin-bottom: 50px;
+    flex-direction: column;
     
+
+}
+.maps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
      
-        position:fixed;
-        width:60px;
-        height:60px;
-        bottom:40px;
-        right:40px;
-        background-color:#25d366;
-        color:rgb(255, 255, 255);
-        border-radius:50px;
-        text-align:center;
-        font-size:45px;
-        z-index:100;
-      }
-      
-      .whatsapp-icon {
-        margin-top:15px;
-      }
-      .whatsapp:hover{
-        color:#25d366;
-        background-color:#ffffff;
-         
-      }
+ }
+ .map-info{
+    margin: 5px;
+    text-align: center;
+    box-shadow: 3px 0 15px rgba(13, 3, 3, 0.18);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+
+ }
+.map {
+    width: 400px;     
+    height: 300px;
+    border: 0;
+    padding: 5px;
+    box-shadow: 3px 0 5px rgba(13, 3, 3, 0.18);
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-group{
+    display: flex;
+    
+}
