@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>MDHL</title>
   <!-- Required meta tags -->
@@ -15,9 +14,10 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="./assets/style/style.css">
 </head>
-
 <body>
+
   <!-- header -->
+
   <header>
     <nav class="nav-contact">
       <a class="nav-phone" href="https://wa.me/6306908132"><svg xmlns="http://www.w3.org/2000/svg" width="30"
@@ -42,75 +42,219 @@
     </nav>
     <div class="contain-logo">
       <img class="logo" src="./assets/img/Logo_Mighty_ducks-02.png" alt="logo">
-      
     </div>
-    
   </header>
+
+  <!-- main -->
+
   <main>
-
-
-
-    <div class="contain-info">
+    <div class="contain-form">
       <div class="info-top">
         <h2>Registration Form</h2>
-        
       </div>
-      <form class="form"action=”servicio.php”>
+      <form class="form" action="show_data.html" method="get">
         <div class="form-group">
-          <label for=name>Player’s First Name: </label> 
-    
-          <input type="text" id="name" name=name> 
-      
-          <label for="last-name">Last Name: </label><br>
-      
-          <input type="text" id="last-name" name="last-name"><br>
-
+          <div class="form-left">
+            <label class="text-label" for="name"> Player’s First Name: </label>
+            <input class="text-input" type="text" id="name" name="name" required>
+          </div>
+          <div class="form-right">
+            <label class="text-label" for="last-name">Last Name: </label>
+            <input class="text-input" type="text" id="last-name" name="last-name" required>
+          </div>
         </div>
         <div class="form-group">
-          <label for="address">Street Address</label>
-          <input type="text"   name="address" id="address"  >
-          
+          <div class="form-left">
+            <label class="text-label" for="address">Street Address: </label>
+            <input class="text-input" type="text" name="address" id="address" required>
+          </div>
         </div>
         <div class="form-group">
-          <label for="city">City</label>
-          <input type="text"   name="city" id="city"  >
-
-          <label for="zip">Zip Code</label>
-          <input type="text"   name="zip" id="zip"  >
+          <div class="form-left">
+            <label class="text-label" for="city">City: </label>
+            <input class="text-input" type="text" name="city" id="city" required>
+          </div>
+          <div class="form-right">
+            <label class="text-label" for="zip">Zip Code: </label>
+            <input class="text-input" type="number" name="zip" id="zip" required>
+          </div>
         </div>
-        
         <div class="form-group">
-          <label for="birth">Birth Date</label>
-          <input type="text"   name="birth" id="birth"  >
- 
-          <p>
-            <label>Masculino
-            <input name="sexo" type="radio" value="Masculino" />
+          <div class="form-left">
+            <label class="text-label" for="birth">Birth Date: </label>
+            <input class="text-input"   type="date" name="birth" id="birth" required>
+          </div>
+          <div class="form-right">
+            <fieldset class="fieldset-label">
+              <legend>Gender: </legend>
+              <label>
+                <input class="myradio"  name="Gender" type="radio" value="female" required/> Female
+              </label>
+              <label>
+                <input class="myradio"  name="Gender" type="radio" value="male" required /> Male
+              </label>
+              <label>
+                <input class="myradio"  name="Gender" type="radio" value="other" required /> Other
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-group">
+          <fieldset class="fieldset-label">
+            <legend>Grade : </legend>
+            <label>PRE-SCHOOL
+              <input class="myradio" name="grade" type="radio" value="PRE-SCHOOL" required />
             </label>
-            <label>Femenino
-            <input name="sexo" type="radio" value="Femenino" />
+            <label>1ST
+              <input class="myradio" name="grade" type="radio" value="1ST" required/>
             </label>
-            </p>
+            <label>2ST
+              <input class="myradio" name="grade" type="radio" value="2ST" required/>
+            </label>
+            <label>3ST
+              <input class="myradio" name="grade" type="radio" value="3ST" required/>
+            </label>
+            <label>4ST
+              <input class="myradio"  name="grade" type="radio" value="4ST" required/>
+            </label>
+            <label>5ST
+              <input class="myradio"  name="grade" type="radio" value="5ST" required/>
+            </label>
+          </fieldset>
         </div>
-       
+        <hr>
 
+        <!-- Question-->
 
-       
-    
+        <div class=" form-group question">
+
+          <fieldset class="fieldset-label">
+            <legend>
+              <h2>Which elementary school do you live near?</h2>
+               
+            </legend>
+            <div class="fielset-midi">
+              <select name="select" required  >
+                <option value="" hidden> Closest School:</option>
+                <option value="AJ Katzenmaier"  > AJ Katzenmaier</option>
+                <option value="Greenbay" > Greenbay</option>
+                <option value="Howard A Yeager" > Howard A Yeager</option>
+                <option value="Marjorie P Hart" > Marjorie P Hart</option>
+                <option value="North Elementary" > North Elementary</option>
+                <option value="South Elementary"  > South Elementary</option>
+              </select>
+            </div>
+          </fieldset>
+        </div>
+        <hr>
+        <div class=" form-group question">
+          <fieldset class="fieldset-label" >
+            <legend>
+              <h3>What position(s) do you normally play? (check all that apply)</h3>
+            </legend>
+            <div class="  fielset-midi">
+              <label>
+                <input class="mycheck"  name="position" type="checkbox" value="Forward"  />
+                Forward
+              </label>
+              <label>
+                <input class="mycheck"   name="position" type="checkbox" value="Midfield"  />
+                Midfield
+              </label>
+            </div>
+            <div class="  fielset-midi">
+              <label>
+                <input class="mycheck"  name="position" type="checkbox" value="Defense"  />
+                Defense
+              </label>
+              <label>
+                <input class="mycheck"  name="position" type="checkbox" value="Goalkeeper"    />
+                Goalkeeper
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <hr>
+        <div class=" form-group question">
+          <fieldset class="fieldset-label">
+            <legend>
+              <h2>Uniform Size:</h2>
+            </legend>
+            <div class="  fielset-midi">
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Youth Small" required />
+                Youth Small
+              </label>
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Youth Medium" required />
+                Youth Medium
+              </label>
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Youth Large" required />
+                Youth Large
+              </label>
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Small" required/>
+                Small
+              </label>
+            </div>
+            <div class="  fielset-midi">
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Medium" required/>
+                Medium
+              </label>
+              <label>
+                <input class="myradio"  name="Uniform-Size" type="radio" value="Large" required/>
+                Large
+              </label>
+              <label>
+                <input class="myradio" name="Uniform-Size" type="radio" value="Extra-Large" required/>
+                Extra-Large
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <h3> Permission to Play </h3>
+        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+          rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated
+          with hockey and in consideration for the "League" accepting the registrant for its hockey programs and
+          activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated
+          personnel and volunteers,including the facilities used for practices and games, against any claim by or on
+          behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported
+          to or from MDHL sponsored activities,which transportation
+          By signing below, I herebyagree andauthorizethe above.ln addition, by signing below, lalso acknowledge that I
+          have read the cancellation policy and agree to its terms.
+        </p>
+        <p>By signing below, I hereby agree authorization above. ln addition, by signing below, lalso
+          acknowledge that I have read the cancellation policy and agree to its terms.</p>
          
-        <button>Enviar</button>
-    
-    </form>
-
-       
-
-
-
-
-
-
+        <fieldset  class="acept" >
+          <legend>
+             
+          </legend>
+          <label >
+            <input  class="mycheck" name="permission-acept" type="checkbox" value="Acept" required />
+            ACEPT
+          </label>
+        </fieldset>
+         
+        <div class="form-group  ">
+          <div class="  form-left">
+            <label class="text-label" for="name"> Parent / Guardian Signature: </label>
+            <input class="text-input" type="text" id="parent" name="parent" required>
+          </div>
+          <div class=" form-right">
+            <label class="text-label" for="last-name">Date: </label>
+            <input class="text-input" type="date" id="date" name="date" required>
+          </div>
+        </div>
+        <button class="myButton">Enviar</button>
+      </form>
     </div>
   </main>
+
+  <!-- Footer-->
+
   <footer>
     <div class="contain-footer">
       <div class="container-footer">
@@ -124,7 +268,7 @@
             <a class="nav-link-footer" href="./rules.html">Rules</a>
           </nav>
         </div>
-        <dic class="contac-footer">
+        <div class="contac-footer">
           <h3>CONTAC US</h3>
           <ul>
             <li>Tom Denton
@@ -139,7 +283,7 @@
                 mdhl@chihockey.org</a>
             </li>
           </ul>
-        </dic>
+        </div>
         <img class="footer-logo" src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo">
       </div>
       <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
@@ -152,16 +296,7 @@
       <path
         d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
     </svg></a>
-
-
-
-
-
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  
+   
+</body>
 </html>

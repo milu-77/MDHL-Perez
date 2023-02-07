@@ -121,7 +121,7 @@ header {
     position: absolute;
     content: "";
     bottom: 0px;
-    background:  crimson;
+    background: crimson;
     width: 94px;
     height: 11px;
     left: 100px;
@@ -328,7 +328,7 @@ header {
     font-size: 20px;
     letter-spacing: 1px;
     margin-left: 10px;
-    ;
+    
 }
 
 .contain-rules dd {
@@ -377,7 +377,6 @@ footer ul li {
     text-align: left;
     font-size: 17px;
     padding-bottom: 10px;
-
 }
 
 .nav-link-footer {
@@ -390,7 +389,6 @@ footer ul li {
     line-height: 18px;
     padding-bottom: 10px;
     display: block;
-
 }
 
 .nav-footer {
@@ -409,7 +407,6 @@ footer a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #979793;
-
     text-align: left;
     font-size: 17px;
     line-height: 18px;
@@ -443,8 +440,6 @@ footer li:hover {
 }
 
 .whatsapp {
-
-
     position: fixed;
     width: 60px;
     height: 60px;
@@ -468,6 +463,7 @@ footer li:hover {
 
 }
 
+/*MAPS*/
 .contain-maps {
     position: relative;
     height: 1400px;
@@ -477,38 +473,244 @@ footer li:hover {
     padding: 75px;
     margin-bottom: 50px;
     flex-direction: column;
-    
-
 }
-.maps{
+
+.maps {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-     
- }
- .map-info{
+}
+
+.map-info {
     margin: 5px;
     text-align: center;
     box-shadow: 3px 0 15px rgba(13, 3, 3, 0.18);
     border-radius: 20px;
     padding: 5px;
     margin-top: 20px;
+}
 
- }
 .map {
-    width: 400px;     
+    width: 400px;
     height: 300px;
     border: 0;
     padding: 5px;
     box-shadow: 3px 0 5px rgba(13, 3, 3, 0.18);
     border-radius: 10px;
 }
-.form{
+
+.contain-form {
+    position: relative;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    display: flex;
+    padding: 75px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+/*Form*/
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
-.form-group{
+
+.form-group {
     display: flex;
-    
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
 }
+
+.form-group .text-label {
+    margin: 1%;
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+.form-group .text-input {
+    letter-spacing: 1px;
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    box-shadow: 3px 3px 6px rgba(13, 3, 3, 1);
+    height: 30px;
+    border-radius: 7px;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+ 
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset-label {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px 6px rgba(13, 3, 3, 0.8);
+    color: black;
+    border-radius: 7px;
+    padding: 1%;
+
+}
+
+.fieldset-label legend {
+    font-size: 20px;
+}
+
+.fieldset-label label {
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.fielset-midi {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+.fielset-midi select {
+    font-size: 20px;
+    width: 50%;
+}
+
+
+.form-right {
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.form-left {
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid crimson;
+    border-bottom: 1px solid #fff;
+    animation: separator-width 10s ease-out forwards;
+}
+
+@keyframes separator-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.form p {
+    font-size: 20px;
+    text-align: justify;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+
+.myButton {
+	box-shadow:inset 0px 5px 8px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:10px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+ 	font-size:20px;
+	font-weight:bold;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:3px 2px 2px #2b665e;
+    letter-spacing: 1.5px;
+    width: 20%;
+    align-self: end;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.acept{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    height: 100%;
+    width: 15%;
+    box-shadow: 3px 3px 6px rgba(13, 3, 3, 0.8);
+    color: black;
+    border-radius: 7px;
+    padding: 1%;
+    align-self: end;   
+
+}
+.acept label{
+    padding-left: 20%;
+    font-size: 20px;
+ }
+input:invalid {
+    background-color: rgb(255, 0, 0,0.9);
+    color: white;
+  }
+   
+   
+  .mycheck{
+    appearance: none;
+    cursor: pointer;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px rgba(13, 3, 3, 0.4);
+  }
+  .mycheck:checked {
+    background-color:#25d366;
+  }
+  .myradio{
+    appearance: none;
+    cursor: pointer;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+
+    box-shadow: 2px 2px 6px rgba(13, 3, 3, 0.4);
+    border-radius: 8px; 
+
+  }
+  .myradio:checked {
+    background-color:#25d366;
+    padding: 1px;
+  }
